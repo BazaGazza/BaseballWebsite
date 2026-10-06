@@ -1,8 +1,8 @@
 ---
 title: 'Our inspiration'
-description: 'Lorem ipsum dolor sit amet'
+description: 'The story behind our baseball analytics project.'
 pubDate: 'Aug 30 2026'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
-place holder money ball inspiration piece 
+Placeholder: a Moneyball-inspired piece about the project’s motivation and vision.
