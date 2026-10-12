@@ -8,12 +8,11 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 ## Technical PDF
 See our attached [technical PDF](https://github.com/BazaGazza/BaseBallAttendanceSimulator/blob/main/BAS_Technical_Report.pdf) that goes more in detail of our execution and thinking process. Additionally see our github for the full open-source repository. 
 
+## Quick start
+
 - **Attendance simulator (CLI):** predicts attendance for a hypothetical game, shows how the weekday and weather move the crowd, and estimates ticket prices for the matchup.
 - **Analytics dashboard (Dash):** league-wide statistics and interactive charts.
 - **Query benchmark:** measures how much the composite indexes speed up the simulator's queries.
-
-
-## Quick start
 
 Requires Python 3.10+.
 
@@ -99,7 +98,7 @@ cd frontend/src
 python app.py
 ```
 
-Then open http://localhost:8050. See [frontend/README.md](frontend/README.md) for adding pages and styling.
+Then open http://localhost:8050. See [frontend/README.md](https://github.com/BazaGazza/BaseBallAttendanceSimulator/blob/main/frontend/README.md) for adding pages and styling.
 
 ### Benchmark
 
@@ -107,7 +106,7 @@ Then open http://localhost:8050. See [frontend/README.md](frontend/README.md) fo
 python benchmark.py
 ```
 
-Times four simulator queries with and without the composite indexes, then restores the indexes. Recorded results are in [benchmark_results.md](benchmark_results.md).
+Times four simulator queries with and without the composite indexes, then restores the indexes. Recorded results are in [benchmark_results.md](https://github.com/BazaGazza/BaseBallAttendanceSimulator/blob/main/benchmark_results.md).
 
 ### Rebuilding the database
 
@@ -141,7 +140,7 @@ clean_*.csv ──► db_setup.py ──► baseball_attendance.db ──► que
 | `gametime_events` | 2,437 | 2026 Gametime listings |
 | `seatgeek_events` | 2,285 | 2026 SeatGeek listings |
 
-Five views do the analysis: `v_ticket_pricing` (both ticket sources in one table), `v_team_attendance_stats`, `v_matchup_history`, `v_day_of_week_effects`, and `v_weather_impact`. Column definitions and data notes are in [DATA_GUIDE.md](DATA_GUIDE.md).
+Five views do the analysis: `v_ticket_pricing` (both ticket sources in one table), `v_team_attendance_stats`, `v_matchup_history`, `v_day_of_week_effects`, and `v_weather_impact`. Column definitions and data notes are in [DATA_GUIDE.md](https://github.com/BazaGazza/BaseBallAttendanceSimulator/blob/main/DATA_GUIDE.md).
 
 ## Project structure
 
@@ -185,6 +184,7 @@ BaseBallAttendanceSimulator/
 | `./run.sh` fails on Windows | It expects a Unix virtual environment. Use the dashboard commands above instead. |
 
 
+
 ## Sources
 
 Retro Sheet Spreadsheets Repositories [Link](https://www.retrosheet.org/downloads/csvdownloads.html)
@@ -192,7 +192,6 @@ MLB park data [Link](https://www.retrosheet.org/downloads/csvparks.html)
 RetroSheet Data Legend [Link](https://www.retrosheet.org/downloads/csvcontents.html)
 
 ## Team
-
 CS 514 team project by:
 - **Grant Trager:** data collection and cleaning, database design, queries, simulator, benchmark
 - **Kyle Kline:** Dash dashboard
