@@ -5,11 +5,8 @@ pubDate: 'Oct 01 2026'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
-# Baseball Attendance Simulator
-
-Predict MLB game attendance and secondary-market ticket prices from 35 seasons of game logs, weather, and scheduling data.
-
-The Baseball Attendance Simulator (BAS) combines historical Retrosheet game logs (1990–2025) with 2026 ticket listings from Gametime and SeatGeek in a single SQLite database. On top of that database it provides:
+## Technical PDF
+See our attached [technical PDF](https://github.com/BazaGazza/BaseBallAttendanceSimulator/blob/main/BAS_Technical_Report.pdf) that goes more in detail of our execution and thinking process. Additionally see our github for the full open-source repository. 
 
 - **Attendance simulator (CLI):** predicts attendance for a hypothetical game, shows how the weekday and weather move the crowd, and estimates ticket prices for the matchup.
 - **Analytics dashboard (Dash):** league-wide statistics and interactive charts.
@@ -190,14 +187,13 @@ BaseBallAttendanceSimulator/
 
 ## Sources
 
-[Retro Sheet Spreadsheets Repositories](https://www.retrosheet.org/downloads/csvdownloads.html)
-[MLB park data](https://www.retrosheet.org/downloads/csvparks.html)
-[RetroSheet Data Legend](https://www.retrosheet.org/downloads/csvcontents.html)
+Retro Sheet Spreadsheets Repositories [Link](https://www.retrosheet.org/downloads/csvdownloads.html)
+MLB park data [Link](https://www.retrosheet.org/downloads/csvparks.html)
+RetroSheet Data Legend [Link](https://www.retrosheet.org/downloads/csvcontents.html)
 
 ## Team
 
 CS 514 team project by:
-
 - **Grant Trager:** data collection and cleaning, database design, queries, simulator, benchmark
 - **Kyle Kline:** Dash dashboard
 - **Rodolfo Baza Carrillo:** project website
