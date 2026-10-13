@@ -1,6 +1,6 @@
 ---
 title: 'User Manual'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+description: 'How to install and run the Baseball Attendance Simulator, its analytics dashboard, and the query benchmark.'
 pubDate: 'Oct 01 2026'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
@@ -57,18 +57,19 @@ Example output:
 
 ```
 1. ATTENDANCE PREDICTION
-  Predicted Attendance: 36,104
-  Expected Range:       15,250 to 51,217
-  Confidence Basis:     Exact Match (n=46)
+  Predicted Attendance: 35,684
+  Expected Range:       32,695 to 38,170
+  Confidence Basis:     Exact Match (n=49)
 
 2. FACTOR IMPACT ANALYSIS
-  Day of Week (Friday)     : +2,461 fans
+  Day of Week (Saturday)   : +934 fans
+  Weather (sunny, none, Moderate): -2,197 fans
 
 3. SECONDARY TICKET MARKET PREDICTION
-  Predicted Floor Price:   $81.00
-  Predicted Average Price: $200.00
-  Predicted Ceiling Price: $2,207.00
-  Data Source:             Exact Matchup (n=12)
+  Predicted Floor Price:   $85.00
+  Predicted Average Price: $166.00
+  Predicted Ceiling Price: $1,081.00
+  Data Source:             Exact Matchup (n=14)
 ```
 
 **Confidence Basis** shows how the prediction was made. The simulator first averages past games with the same matchup, weekday, and day/night. If there are too few of those, it widens the search in steps: matchup + weekday, then matchup only, then the home team's overall average. `n` is the number of games used.
